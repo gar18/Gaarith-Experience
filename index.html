@@ -166,14 +166,14 @@
 									<li>
 										<span>C# &amp; C++</span>
 										<div class="skill-bar-holder">
-											<div class="skill-capacity col-xs-4"></div>
+											<div class="skill-capacity col-xs-3"></div>
 										</div>
 									</li>
 									
 									<li>
 										<span>Python</span>
 										<div class="skill-bar-holder">
-											<div class="skill-capacity col-xs-4"></div>
+											<div class="skill-capacity col-xs-2"></div>
 										</div>
 									</li>
 								</ul>
@@ -189,7 +189,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
-							<h1>Check out my latest projects</h1>
+							<h1>My Progression Projects</h1>
 						</div>
 					</div>
 					
@@ -209,6 +209,12 @@
 									<h1 class="text-white"><strong>My First Web Page</strong></h1>
 									<p class="text-white">Made with HTML5 and CSS3</p>
 									<a href="https://gar18.github.io/FirstWebPage/" target="_blank" class="btn btn-primary btn-white">See Project</a>
+									<button type="button" class="collapsible btn btn-primary btn-white">Details</button>
+										<div class="content">
+ 						 					<p style="color: rgb(243, 243, 243);">The requirements for this task was that we had to make a Shopping Web Page And that it looks
+												  like an actual Page.
+											  </p>
+										</div>
 								</div>
 							</div>
 						</div>
@@ -222,6 +228,12 @@
 									<h1 class="text-white"><strong>E-commerce</strong></h1>
 									<p class="text-white">Functioning of webpage using Javascript and jQuery</p>
 									<a href="https://gar18.github.io/Js-and-JQuery/" target="_blank" class="btn btn-primary btn-white">See Project</a>
+									<button type="button" class="collapsible btn btn-primary btn-white">Details</button>
+										<div class="content">
+ 						 					<p style="color: rgb(255, 255, 255);">This Task we had to make an E-commerce Page which actually had functioning such as adding to a cart.
+												  This task took quite awhile and quite alot of figuring out.
+											  </p>
+										</div>
 								</div>
 							</div>
 						</div>
@@ -235,6 +247,10 @@
 									<h1 class="text-white">Weather app</h1>
 									<p class="text-white">Using api's</p>
 									<a href="https://gar18.github.io/Weather/" target="_blank" class="btn btn-primary btn-white">See Project</a>
+									<button type="button" class="collapsible btn btn-primary btn-white">Details</button>
+										<div class="content">
+ 						 					<p style="color: rgb(243, 243, 243);">Lorem ipsum...</p>
+										</div>
 								</div>
 							</div>
 						</div>
@@ -245,9 +261,17 @@
 							</div>
 							<div class="hover-state">
 								<div class="align-vertical">
-									<h1 class="text-white">CRUD App</h1>
-									<p class="text-white">Create, Recieve, Update and Delete</p>
+									<h1 class="text-white">Project/To-do-list App</h1>
+									<p class="text-white">A Task which you can Plan your projects or things to do.</p>
 									<a href="https://create-update.herokuapp.com/" target="_blank" class="btn btn-primary btn-white">See Project</a>
+									<button type="button" class="collapsible btn btn-primary btn-white">Details</button>
+										<div class="content">
+ 						 					<p style="color: rgb(243, 243, 243);">This was just a little project I had which basically was a project manager, so you can 
+												  put in the time you completed the project and also what the project name was. You can delete and edit
+												  the project also.
+											  </p>
+											
+										</div>
 								</div>
 							</div>
 						</div>
@@ -261,6 +285,12 @@
 									<h1 class="text-white">Game OF Life</h1>
 									<p class="text-white">A Simulation and Interactive Game</p>
 									<a href="https://game-0-life.herokuapp.com/" target="_blank" class="btn btn-primary btn-white">See Project</a>
+									<button type="button" class="collapsible btn btn-primary btn-white">Details</button>
+										<div class="content">
+ 						 					<p style="color: rgb(243, 243, 243);">Probably one of the most complex games I've seen. This game is basically a simulation game, and your aim
+												  is to promote generations. Basically building an economy.
+											  </p>
+										</div>
 								</div>
 							</div>
 						</div>
@@ -358,17 +388,33 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 text-center">
-							<span class="text-white">© 2019 Gaarith Hendricks </span>
-							<br>
-							<br>
 							<i class="icon text-white icon_mail"></i>
-							<a href="contact.html" class="text-white"><span class="text-white"> Get in touch with me <i class="icon arrow_right"></i></span></a>
+							<a href="contact.html" class="text-white"><span class="text-white"> Get in touch  <i class="icon arrow_right"></i></span></a>
+							<br>
+							<br>
+							<span class="text-white">© 2019 Gaarith Hendricks </span>
 						</div>
 					</div>
 				</div>
 				
 			</footer>
 		</div>
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+			
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+				  content.style.display = "none";
+				} else {
+				  content.style.display = "block";
+				}
+			  });
+			}
+			</script>
 				
 		<script src="https://www.youtube.com/iframe_api"></script>
 		<script src="js/jquery.min.js"></script>
