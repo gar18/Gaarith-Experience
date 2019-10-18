@@ -21,3 +21,11 @@ collapsible {
   display: none;
   overflow: hidden;
 }
+
+#myIcons{
+  color:black;
+}
+
+#myIcons:hover{
+  color:white;
+}
